@@ -37,7 +37,7 @@ async def health():
     """Simple health endpoint reporting uptime and basic system info."""
     uptime = time.time() - START_TIME
     return {
-        "status": "ok",
+        "status": "ok ❤",
         "uptime_seconds": round(uptime, 2),
         "python": _sys.version.split()[0],
         "platform": platform.system(),
