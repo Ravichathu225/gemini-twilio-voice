@@ -43,7 +43,7 @@ def _build_setup_msg() -> dict:
                     "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICE}}
                 },
                 "thinkingConfig": {"thinkingBudget": 0},
-                "temperature": 0.2,   # lowered from 0.7 for consistent, predictable behaviour
+                "temperature": 0.7,   # lowered from 0.7 for consistent, predictable behaviour
             },
             "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
             # Context window compression REMOVED — it was causing the bot to forget
